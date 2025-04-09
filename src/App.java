@@ -1,11 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(fact(5));
-    }
-
-    public static int fact(int n) {
-        if (n==0) return 1;
-        return n*fact(n-1);
+        EjerciciosRecursivos e = new EjerciciosRecursivos();
+        System.out.println(e.fact(5));
+        System.out.println(e.fibonacci(6));
+        System.out.println(e.sumaCons(6));
     }
     
 }
