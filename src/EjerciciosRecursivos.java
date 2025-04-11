@@ -15,4 +15,14 @@ public class EjerciciosRecursivos {
         return n+sumaCons(n-1);
     }
 
+    public int getPotencia(int b, int e) {
+        if (e<=1) return b*1;
+        return b*getPotencia(b, e-1);
+    }
+
+    public int sumaDig(int n) {
+        if (n<10) return n;
+        return (n%10)+sumaDig(n/10);
+    }
+
 }
