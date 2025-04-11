@@ -1,3 +1,4 @@
+
 public class EjerciciosRecursivos {
 
     public int fact(int n) {
@@ -23,6 +24,19 @@ public class EjerciciosRecursivos {
     public int sumaDig(int n) {
         if (n<10) return n;
         return (n%10)+sumaDig(n/10);
+    }
+
+    public void printNums(int n) {
+        if (n<=1) System.out.println(1);
+        else {
+            System.out.print(n+" ");
+            printNums(n-1);
+        }
+    }
+
+    public int inverso(int n) {
+        if (n<10) return n;
+        return Integer.parseInt(""+(n%10)+inverso(n/10));
     }
 
 }

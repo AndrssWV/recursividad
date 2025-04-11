@@ -6,5 +6,7 @@ public class App {
         System.out.println(e.sumaCons(6));
         System.out.println(e.getPotencia(2, 3));
         System.out.println(e.sumaDig(8259));
+        e.printNums(6);
+        System.out.println(e.inverso(123));
     }    
 }
